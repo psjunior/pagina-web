@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+	<!-- dir informa o método de leitura (left to right) -->
+	<!-- lang não indica qual a linguagem do site, apenas serve de apoio ao navegador -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Paulo Junior">
+		<meta name="description" content="Site foi desenvolivdo em 2018 por Paulo Juinior, durante a aula de desenvolvimento web">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Estudante de engenharia</title>
+		<!-- Referencia ao arquivo de estilos -->
+		<!-- o site da adobe (color adobe cc) apresenta a paleta de cores com uma imagem -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Este exemplo usará um arquivo css do bootsrap -->
+		<!-- O materialize é outro exemplo de framework para desenolvimento de estilos -->
+		<!-- flask é um framework para desenvolvimento web python -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top"> <!-- classe navbar-fixed-top reduz o espaçamento entre o header e a barra de menu -->
+		  <div class="container-fluid"> <!-- container-fluid utiliza todo o espaço horizontal disponível na página. Utilizar só container adciona espaçamento lateral -->
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Paulo Junior</a> <!-- href="#" direciona para a página principal -->
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+				<!-- collapse realiza a compressão do menu em comobox -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#slides">Slides</a></li>
+						<li><a href="#videos">Vídeos</a></li>
+						<li><a href="#contato">Contato</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<header>
+			<!-- div principal -->
+			<div class="conteudo">
+				<!-- Criação de div para imagem e texto -->
+				<div class="item">
+					<img class="img-round" src="img/img2-perfil.jpg" alt="Foto de perfil">
+				</div>
+				<div class="item">
+					<h1>Paulo Junior</h1>
+					<h3>Graduando em Engenharia de Computação</h3>
+
+
+				</div>
+			</div>
+		</header>
+		<section id="contato"> <!-- Separa o body por seções podendo ser referenciados como âncora-->
+			<div class="container">
+				<h1 class="text-center">Contato</h1>
+
+			</div>
+		</section>
+		<!-- Java script pode ser adcionado no inicio ou no fim do body. Realizará as operações -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- A tag acima realzia a importação do jquery, deve ser utilizado nesta ordem -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>

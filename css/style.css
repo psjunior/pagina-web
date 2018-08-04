@@ -1,0 +1,67 @@
+.img-round{
+  border-radius: 50%; /* Efeito circular na bora da imagem */
+  width: 18%; /* Tamanho da imagem */
+}
+
+header{ /* É possível aplicar uma característica (CSS) a toda referência da mesma tag */
+  background-image: url("../img/img2-header.jpg"); /* A barra (../) antes da url indica que o arquivo está fora da pasta atual */
+  position: relative; /* Permite posicionamento da imagem */
+  width: 100%; /* Redmiensionamento horizontal */
+  min-height: auto; /* Altura mínima definida automaticamente pelo tamnho do header */
+  /* tags para alinhamento do background forçando a imagem a ocupar todo o espeço disponível */
+  -webkit-backgroud-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size:cover;
+  background-position:center;
+  /* ----------------------------- */
+  text-align: center; /* Alinhamento do texto centro */
+  color: white;
+}
+
+header .conteudo{ /* Forma de atribuir uma caracterísitica que só funciona quando aplicado à tag */
+  position: relative;
+  padding: 100px 15px 100px; /* 100 topo, 15 lateral, 100 base */
+  width: 100%;
+}
+
+/* .text-position{
+  position: relative;
+  padding: 20px 15px 20px;
+} */
+
+.text-center{
+  position: relative;
+  padding: 20px 15px 20px;
+  text-align: center;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+@media(min-width: 768px;) { /* Definição de condição para dispositivos móveis */
+  head{
+    min-height: 100%; /* Forçar que a imagem ocupe o tamanho completo da página em dispositivos móveis */
+    text-align: center;
+  }
+
+  head .conteudo{
+    position: absolute; /* Estabelece posições absolutas */
+    top: 50%; /* Definição de margem */
+    /* Redundancia para diversas tecnologias */
+    -webkit-trnasform: translateY(-50%); /* Reposicionando todo o conteúdo para o centro da página */
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* ----------------------------------------- */
+    text-align: center;
+  }
+
+  header .conteudo .item{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
