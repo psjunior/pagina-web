@@ -78,13 +78,15 @@
 						<textarea class="form-control" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
 					</p>
 					<p>
-						<input class="form-control btn btn-primary" type="submit" name="submit" id="submit" value="Enviar">
+						<!-- onclick é o atributo que vai verificar a iteração de click com o objeto. Este está relacionado à função em js -->
+						<input class="form-control btn btn-primary" type="submit" name="submit" id="submit" value="Enviar" onclick="btn_enviar()">
 					</p>
 				</form>
 			</div>
 		</section>
 		<!-- Disponibilização do código no site do bootstrap https://getbootstrap.com/ -->
 		<!-- Java script pode ser adcionado no inicio ou no fim do body. Realizará as operações -->
+		<script src="js/valid.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- A tag acima realzia a importação do jquery, deve ser utilizado nesta ordem -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
