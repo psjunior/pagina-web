@@ -59,9 +59,31 @@
 		<section id="contato"> <!-- Separa o body por seções podendo ser referenciados como âncora-->
 			<div class="container">
 				<h1 class="text-center">Contato</h1>
-
+				<!-- method="post" method é o atributo que descreve o formato de recuperação dos dados. post - apresenta o conteúdo dos inputs na url -->
+				<!-- action="index.html" identifica a fonte do dado -->
+				<form class="text-center" action="index.html" method="post">
+					<p>
+						<!-- Control + D seleciona todas as ocorrências da mesma tag -->
+						<!-- Atributo for relaciona o label ao input -->
+						<!-- class form-control do bootsrap redmiensiona os campos para o tamanho da página -->
+						<!-- <label for="nome">Nome:</label> -->
+						<input class="form-control" type="text" name="nome" id="nome" placeholder="Nome">
+					</p>
+					<p>
+						<!-- <label for="email">E-mail:</label> -->
+						<input class="form-control" type="text" name="email" id="email" placeholder="E-mail">
+					</p>
+					<p>
+						<!-- <label for="mensagem">Mensagem:</label> -->
+						<textarea class="form-control" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+					</p>
+					<p>
+						<input class="form-control btn btn-primary" type="submit" name="submit" id="submit" value="Enviar">
+					</p>
+				</form>
 			</div>
 		</section>
+		<!-- Disponibilização do código no site do bootstrap https://getbootstrap.com/ -->
 		<!-- Java script pode ser adcionado no inicio ou no fim do body. Realizará as operações -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- A tag acima realzia a importação do jquery, deve ser utilizado nesta ordem -->
